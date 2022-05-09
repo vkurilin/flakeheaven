@@ -118,6 +118,12 @@ def check_include(code: str, rules: List[str]) -> bool:
 def get_exceptions(
     path: Union[str, Path], exceptions: Dict[str, PluginsType], root: Path = None,
 ) -> PluginsType:
+    """
+    Just like in get_plugin_rules. The algorithm:
+
+    1. Try to find exact match (normalizing ass all packages names normalized)
+    2. Try to find globs that match and select the longest one (nginx-style)
+    """
     if not exceptions:
         return dict()
     if isinstance(path, str):
@@ -132,23 +138,22 @@ def get_exceptions(
     exceptions = sorted(
         exceptions.items(),
         key=lambda item: len(item[0]),
-        reverse=True,
     )
 
     aggregated_rules = dict()
-
-    # prefix
-    for path_rule, rules in exceptions:
-        if '*' in path_rule:
-            continue
-        if path.startswith(path_rule):
-            aggregated_rules.update(rules)
 
     # glob
     for path_rule, rules in exceptions:
         if '*' not in path_rule:
             continue
         if fnmatch(filename=path, patterns=[path_rule]):
+            aggregated_rules.update(rules)
+
+    # prefix
+    for path_rule, rules in exceptions:
+        if '*' in path_rule:
+            continue
+        if path.startswith(path_rule):
             aggregated_rules.update(rules)
 
     return aggregated_rules
