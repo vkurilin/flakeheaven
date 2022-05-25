@@ -121,7 +121,7 @@ def get_exceptions(
     """
     Just like in get_plugin_rules. The algorithm:
 
-    1. Try to find exact match (normalizing ass all packages names normalized)
+    1. Try to find exact match (normalizing as all packages names normalized)
     2. Try to find globs that match and select the longest one (nginx-style)
     """
     if not exceptions:
