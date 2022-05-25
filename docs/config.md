@@ -40,6 +40,25 @@ pyflakes = ["-*"]
 
 path can be either a path prefix (from the project root) or a [glob pattern](https://docs.python.org/3/library/fnmatch.html).
 
+If a file matches multiple patterns, the best pattern is chosen, following the nginx-style:
+1. Prefix-pattern always beats glob-pattern
+2. Among all matching patterns of the same type, the most specific one (with the longest length) wins.
+
+For example, in the file structure:
+```
+root
+└─ dir_1
+   └─ dir_1_1
+      └─ file_1.py
+```
+
+Patterns will have the following priorities:
+1. `root/dir_1/dir_1_1/` (most specific prefix-pattern)
+2. `root/dir_1/` (less specific prefix-pattern, but still beats glob-patterns)
+3. `root/dir_1/*` (the longest glob beats the shorter one)
+4. `root/*` (the widest glob-pattern)
+
+
 ## Base
 
 Option `base` allows to specify base config from which you want to inherit this one. It can be path to local config or remote URL. You can specify one path or list of paths as well. For example:
