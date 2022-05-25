@@ -1,3 +1,9 @@
+## 1.0.1 (2022-05-25)
+
+### Fix
+
+- **exceptions-config**: flakeheaven/flakeheaven#74: fix exceptions ordering
+
 ## 1.0.0 (2022-05-24)
 
 ### Perf
