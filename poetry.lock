@@ -10,8 +10,8 @@ python-versions = "*"
 name = "argcomplete"
 version = "1.12.3"
 description = "Bash tab completion for argparse"
-category = "main"
-optional = true
+category = "dev"
+optional = false
 python-versions = "*"
 
 [package.dependencies]
@@ -189,8 +189,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "commitizen"
 version = "2.27.1"
 description = "Python commitizen client tool"
-category = "main"
-optional = true
+category = "dev"
+optional = false
 python-versions = ">=3.6.2,<4.0.0"
 
 [package.dependencies]
@@ -236,8 +236,8 @@ python-versions = ">=3.6, <3.7"
 name = "decli"
 version = "0.5.2"
 description = "Minimal, easy-to-use, declarative cli tool"
-category = "main"
-optional = true
+category = "dev"
+optional = false
 python-versions = ">=3.6"
 
 [[package]]
@@ -945,7 +945,7 @@ name = "jinja2"
 version = "3.0.3"
 description = "A very fast and expressive template engine."
 category = "main"
-optional = true
+optional = false
 python-versions = ">=3.6"
 
 [package.dependencies]
@@ -967,7 +967,7 @@ name = "markupsafe"
 version = "2.0.1"
 description = "Safely add untrusted strings to HTML/XML markup."
 category = "main"
-optional = true
+optional = false
 python-versions = ">=3.6"
 
 [[package]]
@@ -1100,8 +1100,8 @@ testing = ["pytest", "pytest-benchmark"]
 name = "prompt-toolkit"
 version = "3.0.29"
 description = "Library for building powerful interactive command lines in Python"
-category = "main"
-optional = true
+category = "dev"
+optional = false
 python-versions = ">=3.6.2"
 
 [package.dependencies]
@@ -1230,7 +1230,7 @@ python-versions = "*"
 name = "pyyaml"
 version = "6.0"
 description = "YAML parser and emitter for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -1238,8 +1238,8 @@ python-versions = ">=3.6"
 name = "questionary"
 version = "1.10.0"
 description = "Python library to build pretty command line user prompts ⭐️"
-category = "main"
-optional = true
+category = "dev"
+optional = false
 python-versions = ">=3.6,<4.0"
 
 [package.dependencies]
@@ -1451,8 +1451,8 @@ pbr = ">=2.0.0,<2.1.0 || >2.1.0"
 name = "termcolor"
 version = "1.1.0"
 description = "ANSII Color formatting for output in terminal."
-category = "main"
-optional = true
+category = "dev"
+optional = false
 python-versions = "*"
 
 [[package]]
@@ -1488,8 +1488,8 @@ python-versions = ">=3.6"
 name = "tomlkit"
 version = "0.10.2"
 description = "Style preserving TOML library"
-category = "main"
-optional = true
+category = "dev"
+optional = false
 python-versions = ">=3.6,<4.0"
 
 [[package]]
@@ -1525,8 +1525,8 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 name = "wcwidth"
 version = "0.2.5"
 description = "Measures the displayed width of unicode strings in a terminal"
-category = "main"
-optional = true
+category = "dev"
+optional = false
 python-versions = "*"
 
 [[package]]
@@ -1580,13 +1580,12 @@ docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [extras]
-dev = ["commitizen"]
 docs = ["alabaster", "pygments-github-lexers", "recommonmark", "sphinx"]
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6.2"
-content-hash = "f4b157acf67deed2d5cbeaf11272fb90fd3f738b5091d962a73c03a1fc24b2c6"
+content-hash = "075a749075377e2cf42d378b76f6ae9824833af269d0718daafc59facc0e3541"
 
 [metadata.files]
 alabaster = [
