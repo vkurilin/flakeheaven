@@ -52,12 +52,9 @@ alabaster = {version = "*", optional = true}
 pygments-github-lexers = {version = "*", optional = true}
 recommonmark = {version = "*", optional = true}
 sphinx = {version = "*", optional = true}
-# Dev
-commitizen = {version = ">=2.22", optional = true}
 
 [tool.poetry.extras]
 docs = ["alabaster", "pygments-github-lexers", "recommonmark", "sphinx"]
-dev = ["commitizen"]
 
 [tool.poetry.dev-dependencies]
 ## Testing
@@ -119,6 +116,7 @@ wemake-python-styleguide = "*"
 mypy = "*"
 pytest = "*"
 isort = "*"
+commitizen = ">=2.22"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
