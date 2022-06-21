@@ -1,3 +1,9 @@
+## 1.0.2 (2022-06-21)
+
+### Fix
+
+- add severity property to GitLab formatter output
+
 ## 1.0.1 (2022-05-25)
 
 ### Fix
