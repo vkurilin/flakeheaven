@@ -111,7 +111,13 @@ Read [the documentation](https://flakeheaven.readthedocs.io/en/latest/) for more
 
 ## Contributing
 
-Contributions are welcome! A few ideas what you can contribute:
+1. Add tests when possible (eg for features / fixes / refactor, etc. )
+2. add your contribution to the code / docs
+3. Ensure your code passes all (both oririnal and your own) tests.
+4. commit using [proper header](https://www.conventionalcommits.org/en/v1.0.0/)
+5. create a PR
+
+Contributions are welcome! A few ideas where you can contribute:
 
 + Improve documentation.
 + Add more tests.
@@ -127,8 +133,6 @@ curl -sSL https://install.python-poetry.org | python3 -
 poetry install
 poetry run pytest tests
 ```
-
-Bug-tracker is disabled by-design to shift contributions from words to actions. Please, help us make the project better and don't stalk maintainers in social networks and on the street.
 
 Thank you :heart:
 
