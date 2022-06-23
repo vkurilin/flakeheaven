@@ -1,3 +1,13 @@
+## 2.0.0 (2022-06-23)
+
+### Fix
+
+- **logic**: properly merge configs to avoid creating empty values
+
+### BREAKING CHANGE
+
+- Default plugins will now run when pyproject.toml exists without [tool.flakeheaven.plugins] section.
+
 ## 1.0.2 (2022-06-21)
 
 ### Fix
