@@ -1,3 +1,9 @@
+## 2.1.1 (2022-07-25)
+
+### Fix
+
+- **patched**: use same config fields as tox
+
 ## 2.1.0 (2022-07-25)
 
 ### Feat
