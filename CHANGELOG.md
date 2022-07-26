@@ -1,3 +1,9 @@
+## 2.1.2 (2022-07-26)
+
+### Fix
+
+- **logic/snapshot**: avoid file existence errors when preparing cache
+
 ## 2.1.1 (2022-07-25)
 
 ### Fix
