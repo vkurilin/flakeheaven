@@ -1,3 +1,9 @@
+## 2.1.3 (2022-07-27)
+
+### Fix
+
+- **logic**: use deep update to ensure proper value overrides
+
 ## 2.1.2 (2022-07-26)
 
 ### Fix
