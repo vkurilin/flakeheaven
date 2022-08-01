@@ -1,3 +1,13 @@
+## 3.0.0 (2022-08-01)
+
+### Fix
+
+- **plugins/pylint**: forward max_line_length to pylint plugin
+
+### BREAKING CHANGE
+
+- E0001 is no longer ignored
+
 ## 2.1.3 (2022-07-27)
 
 ### Fix
